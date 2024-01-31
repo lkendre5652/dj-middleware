@@ -12,6 +12,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'admin_soft.apps.AdminSoftDashboardConfig',
+    # 'admin_interface',
+    # 'colorfield',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -19,6 +22,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mdlware',
+   
+    
+    
 ]
 
 MIDDLEWARE = [
@@ -31,9 +37,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # 'mdlware.mymiddleware.My_middleware',
     # 'mdlware.classbase_middleware.MyMiddleWare',
-    'mdlware.multiple_middleware.BrotherMiddleware',
-    'mdlware.multiple_middleware.FatherMiddleware',
-    'mdlware.multiple_middleware.MotherMiddleware',
+    # 'mdlware.multiple_middleware.BrotherMiddleware',
+    # 'mdlware.multiple_middleware.FatherMiddleware',
+    # 'mdlware.multiple_middleware.MotherMiddleware',
+    # 'mdlware.process_view_middleware.Process_view_middleware',
+    # "mdlware.func_middelware.func_middelware",
+    # 'mdlware.cls_middleware.prs_tmp_resp',
+    'mdlware.MYFUC_MIDDLEWARE.MYFUC_MIDDLEWARE'
 
 ]
 

@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 class BrotherMiddleware:
     def __init__(self,get_response):
         self.get_response = get_response
@@ -14,7 +15,8 @@ class FatherMiddleware:
         print('Father one time father')
     def __call__(self,request):
         print('Father before view ')
-        response = self.get_response(request)
+        response = HttpResponse('go to hell')
+        # response = self.get_response(request)
         print('Father after view ')
         return response
 
